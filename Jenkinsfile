@@ -9,7 +9,8 @@ node('master') {
 	
 
 	stage ('Test Cases Execution'){
-		sh "mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install -Pcoverage-per-test"
+		def mvnHome = tool name: 'maven3', type: 'maven'
+		sh "${mvnHome} org.jacoco:jacoco-maven-plugin:prepare-agent install -Pcoverage-per-test"
 	}
 
 	stage ('Sonar Analysis'){
