@@ -4,7 +4,7 @@ node('master') {
 	}
 	
 	stage ('Build'){
-		sh "mvn -U clean installe"
+		sh "mvn -U clean install"
 	}
 
 	stage ('Test Cases Execution'){
