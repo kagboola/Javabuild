@@ -3,7 +3,8 @@ node('master') {
 		checkout scm
 	}
 	stage ('Build'){
-		sh "mvn clean install -Dmaven.test.skip=true"
+		def mvnHome = tool name: 'maven3', type: 'maven'
+		sh "${mvnHome}/bin/mvn package"
 	}
 	
 
