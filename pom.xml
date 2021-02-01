@@ -10,12 +10,12 @@
 			<repository>
 				<id>central</id>
 				<name>artifactory-releases</name>
-				<url>http://192.168.64.12:31010/artifactory/libs-release-local</url>
+				<url>http://192.168.64.13:31010/artifactory/libs-release-local</url>
 			</repository>
 			<snapshotRepository>
 				<id>snapshots</id>
 				<name>artifactory-snapshots</name>
-				<url>http://192.168.64.12:31010/artifactory/libs-snapshot</url>
+				<url>http://192.168.64.13:31010/artifactory/libs-snapshot</url>
 			</snapshotRepository>
 		</distributionManagement>
 	  <dependencies>
