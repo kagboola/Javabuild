@@ -15,7 +15,7 @@ node('master') {
 	stage ('Deployment'){
 		//sh 'cp target/*.war /opt/tomcat8/webapps'
 	}
-	stage ('Deploy to kubernetes){
+	stage ('Deploy to kubernetes'){
 		steps{
 		      script {
 				kubernetesDeploy(configs: "nginx.yaml", kubeconfigId: "mykubeconfig")
