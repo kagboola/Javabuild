@@ -4,12 +4,12 @@
   <servers>
     <server>
       <username>deployer</username>
-      <password>APSLWscYGeBrRrfK5Ufwn3gFtM</password>
+      <password>AP67SBpVRP2c6dcZouRiLRawQ66</password>
       <id>central</id>
     </server>
     <server>
       <username>deployer</username>
-      <password>APSLWscYGeBrRrfK5Ufwn3gFtM</password>
+      <password>AP67SBpVRP2c6dcZouRiLRawQ66</password>
       <id>snapshots</id>
     </server>
   </servers>
@@ -22,13 +22,13 @@
           </snapshots>
           <id>central</id>
           <name>libs-release</name>
-          <url>http://34.123.176.223:8081/artifactory/libs-release</url>
+          <url>http://192.168.64.13:31010/artifactory/libs-release</url>
         </repository>
         <repository>
           <snapshots />
           <id>snapshots</id>
           <name>libs-snapshot</name>
-          <url>http://34.123.176.223:8081/artifactory/libs-snapshot</url>
+          <url>http://192.168.64.13:31010/artifactory/libs-snapshot</url>
         </repository>
       </repositories>
       <pluginRepositories>
@@ -38,13 +38,13 @@
           </snapshots>
           <id>central</id>
           <name>libs-release</name>
-          <url>http://34.123.176.223:8081/artifactory/libs-release</url>
+          <url>http://192.168.64.13:31010/artifactory/libs-release</url>
         </pluginRepository>
         <pluginRepository>
           <snapshots />
           <id>snapshots</id>
           <name>libs-snapshot</name>
-          <url>http://34.123.176.223:8081/artifactory/libs-snapshot</url>
+          <url>http://192.168.64.13:31010/artifactory/libs-snapshot</url>
         </pluginRepository>
       </pluginRepositories>
       <id>artifactory</id>
