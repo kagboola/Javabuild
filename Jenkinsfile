@@ -16,11 +16,11 @@ node('master') {
 		//sh 'cp target/*.war /opt/tomcat8/webapps'
 	}
 	stage ('Deploy to kubernetes'){
-		steps{
-		      script {
-				kubernetesDeploy(configs: "nginx.yaml", kubeconfigId: "mykubeconfig")
-		             }
-			       }
+		
+		      
+			sh kubernetesDeploy(configs: "nginx.yaml", kubeconfigId: "mykubeconfig")
+		            
+			      
 		       }
 	stage ('Notification'){
 				emailext (
