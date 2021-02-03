@@ -20,7 +20,7 @@ node('master') {
 	stage ('Deploy to kubernetes'){
 		
 		      
-			sh kubernetesDeploy(configs: "target/java-example.war", kubeconfigId: "mynewkube")    
+			sh kubernetesDeploy(configs: "*war", kubeconfigId: "mynewkube")    
 			      
 		       }
 	stage ('Notification'){
