@@ -19,7 +19,7 @@ node('master') {
 	
 	stage ('Deploy to kubernetes'){
 		
-		sh 'kuberctl run apply -f nginx.yaml' 
+		sh 'kubectl run apply -f nginx.yaml' 
 		      
 			//sh kubernetesDeploy(configs: "nginx.yaml", kubeconfigId: "mynewkube")    
 			      
