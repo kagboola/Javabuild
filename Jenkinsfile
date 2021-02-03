@@ -20,7 +20,7 @@ node('master') {
 	stage ('Deploy to kubernetes'){
 		
 		      
-			sh kubernetesDeploy(kubeconfigId: "mynewkube")    
+			sh kubernetesDeploy(configs: kubeconfigId: "mynewkube")    
 			      
 		       }
 	stage ('Notification'){
