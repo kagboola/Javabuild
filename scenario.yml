@@ -1,0 +1,7 @@
+scenarios:
+  my_scenario:
+    requests:
+      - label: Home
+        url: /java-example
+        method: GET
+        think-time: 500ms
