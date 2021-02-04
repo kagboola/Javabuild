@@ -1,0 +1,10 @@
+execution:
+- concurrency: 5
+  throughput: 3
+  ramp-up: 30s
+  hold-for: 1m
+  scenario:
+    default-address: http://104.197.68.153:8082
+    requests:
+    - include-scenario: my_scenario
+
