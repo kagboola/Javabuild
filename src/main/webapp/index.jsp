@@ -4,6 +4,6 @@
   <title>Some relevant title</title>
 </head>
 <body>
-<h2>Hello World! My First Tomcat Deployment</h2>
+<h2>Hello World! Kenny Tomcat Deployment</h2>
 </body>
 </html>
